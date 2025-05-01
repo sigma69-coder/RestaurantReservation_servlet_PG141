@@ -18,5 +18,4 @@ public class QueueArray {
     public static Queue<Reservation> getQueue() {
         return queue;
     }
-
 }

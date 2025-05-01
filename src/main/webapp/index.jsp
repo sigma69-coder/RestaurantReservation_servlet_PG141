@@ -10,7 +10,7 @@
     <%@ include file="navbar.jsp" %>
 
     <div class="container">
-        <h1>Welcome to Our Restaurant Reservation System</h1>
+        <h1>Welcome to Our Restaurant Table Reservation System</h1>
         <a href="reservationForm.jsp" class="btn">Make a Reservation</a>
         <a href="view-queue" class="btn">View Queue</a>
     </div>
