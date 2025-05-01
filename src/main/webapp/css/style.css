@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+    padding: 30px;
+    box-shadow: 0 0 15px #000;
+    color: white; /* text color so it's visible on dark background */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 15px 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* slight zoom on hover */
+}
+.container02 {
+    max-width: 800px;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+    padding: 30px;
+    box-shadow: 0 0 15px #000;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.container02 h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: white;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    border: 1px solid #ffffff33; /* semi-transparent white border */
+    text-align: center;
+}
+
+table th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05); /* light row shading */
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* row highlight on hover */
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.7); /* match dark transparent theme */
+    padding: 15px 30px;
+    box-shadow: 0 0 10px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar a:hover {
+    background-color: #007BFF;
+    transform: scale(1.05);
+}
