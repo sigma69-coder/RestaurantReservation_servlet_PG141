@@ -13,6 +13,7 @@
             <input type="text" name="phone" placeholder="Phone" required>
             <input type="date" name="date" required>
             <input type="time" name="time" required>
+            <input type="number" name="seats" placeholder="Seats" required>
             <button type="submit">Reserve</button>
         </form>
     </div>
