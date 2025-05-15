@@ -6,7 +6,7 @@ public class Reservation {
     private String date;
     private String time;
     private int seats;
-
+//reservation
     public Reservation(String name, String phone, String date, String time, int seats) {
         this.name = name;
         this.phone = phone;
