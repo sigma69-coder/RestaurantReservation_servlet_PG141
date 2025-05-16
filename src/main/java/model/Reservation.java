@@ -18,9 +18,9 @@ public class Reservation {
 // Getter methods to access private fields of the reservation
 
 
-    public String getName() { return name; }
-    public String getPhone() { return phone; }
-    public String getDate() { return date; }
-    public String getTime() { return time; }
-    public int getSeats() { return seats; }
+    public String getName() { return name; }  //Getter name Method
+    public String getPhone() { return phone; }  //Getter phone Method
+    public String getDate() { return date; }  //Getter Date Method
+    public String getTime() { return time; }   //Getter Time Method
+    public int getSeats() { return seats; }  //Getter Seat Method
 }
