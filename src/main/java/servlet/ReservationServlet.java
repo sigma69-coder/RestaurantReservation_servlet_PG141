@@ -13,6 +13,7 @@ import java.io.IOException;
 public class ReservationServlet extends HttpServlet {
     private static QueueArray queue = new QueueArray(100);
 
+
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("name");
         String phone = req.getParameter("phone");
