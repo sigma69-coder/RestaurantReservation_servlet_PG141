@@ -1,5 +1,6 @@
 package servlet;
 
+// Importing the required classes from the model packages
 import model.Reservation;
 import model.QueueArray;
 
@@ -11,6 +12,7 @@ import java.io.IOException;
 @WebServlet("/add-reservation")
 public class ReservationServlet extends HttpServlet {
     private static QueueArray queue = new QueueArray(100);
+
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("name");
