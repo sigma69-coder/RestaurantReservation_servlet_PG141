@@ -1,6 +1,6 @@
 package servlet;
 
-// Importing the required classes from the model packages
+ // Importing the required classes from the model packages
 import model.Reservation;
 import model.QueueArray;
 
