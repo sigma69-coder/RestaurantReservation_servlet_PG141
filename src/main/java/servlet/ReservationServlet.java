@@ -11,7 +11,7 @@ import java.io.IOException;
 
 @WebServlet("/add-reservation")
      public class ReservationServlet extends HttpServlet {
-    private static QueueArray queue = new QueueArray(100);
+     private static QueueArray queue = new QueueArray(100);
 
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
