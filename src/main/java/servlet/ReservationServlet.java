@@ -1,6 +1,6 @@
 package servlet;
 
- // Importing the required classes from the model packages
+// Importing the required classes from the model packages
 import model.Reservation;
 import model.QueueArray;
 
@@ -10,7 +10,7 @@ import javax.servlet.*;
 import java.io.IOException;
 
 @WebServlet("/add-reservation")
-public class ReservationServlet extends HttpServlet {
+    public class ReservationServlet extends HttpServlet {
     private static QueueArray queue = new QueueArray(100);
 
 
