@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Make Reservation</title> <%-- Page Title --%>
+    <title>Make Reservation</title> <%-- Page Title--%>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
