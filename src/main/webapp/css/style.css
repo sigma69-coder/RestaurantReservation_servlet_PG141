@@ -86,12 +86,12 @@ table tr:hover {
     background-color: rgba(255, 255, 255, 0.1); /* row highlight on hover */
 }
 
-input, button {
+input, button  {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
 }
-.navbar {
+.navbar  {
     background: rgba(0, 0, 0, 0.7); /* match dark transparent theme */
     padding: 15px 30px;
     box-shadow: 0 0 10px #000;
