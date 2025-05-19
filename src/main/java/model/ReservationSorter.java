@@ -4,17 +4,18 @@ import java.util.Arrays;
 
 public class ReservationSorter {
     public static Reservation[] mergeSortByTime(Reservation[] arr) {
-        if (arr.length < 2) return arr;
+        if (arr == null || arr.length < 2) return arr;
 
         int mid = arr.length >>> 1;
-        Reservation[] left = Arrays.copyOfRange(arr, 0, mid);
+        Reservation[] left = Arrays.copyOf(arr, mid);
         Reservation[] right = Arrays.copyOfRange(arr, mid, arr.length);
 
         return merge(mergeSortByTime(left), mergeSortByTime(right));
     }
 
     private static Reservation[] merge(Reservation[] left, Reservation[] right) {
-        Reservation[] result = new Reservation[left.length + right.length];
+        int total = left.length + right.length;
+        Reservation[] result = new Reservation[total];
         int i = 0, l = 0, r = 0;
 
         while (l < left.length && r < right.length) {
