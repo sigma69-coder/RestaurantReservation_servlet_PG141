@@ -14,7 +14,7 @@ public class ViewQueueServlet extends HttpServlet {
         Reservation[] unsorted = ReservationServlet.getQueue().toArray();
         Reservation[] sorted = ReservationSorter.mergeSortByTime(unsorted);
 
-        req.setAttribute("sortedQueue", sorted);
+        req.setAttribute("sortedQueue", sorted);//
         req.getRequestDispatcher("viewQueue.jsp").forward(req, resp);
     }
 }
