@@ -26,6 +26,7 @@ import java.io.IOException;
          // Insert the reservation into the queue
         queue.insert(res);
 // Redirect the user to the page that displays the current queueresp.sendRedirect("view-queue");
+         resp.sendRedirect("view-queue");
     }
     // Static method to allow access to the queue from other classes
      public static QueueArray getQueue() {
