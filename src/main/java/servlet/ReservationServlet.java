@@ -28,7 +28,7 @@ import java.io.IOException;
 // Redirect the user to the page that displays the current queueresp.sendRedirect("view-queue");
     }
     // Static method to allow access to the queue from other classes
-    public static QueueArray getQueue() {
+     public static QueueArray getQueue() {
         return queue;
     }
  }
