@@ -22,7 +22,7 @@ import java.io.IOException;
         String time = req.getParameter("time");
         int seats = Integer.parseInt(req.getParameter("seats"));
 // Create a new Reservation object using the retrieved data
-        Reservation res = new Reservation(name, phone, date, time, seats);
+         Reservation res = new Reservation(name, phone, date, time, seats);
          // Insert the reservation into the queue
         queue.insert(res);
 // Redirect the user to the page that displays the current queueresp.sendRedirect("view-queue");
