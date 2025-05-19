@@ -48,4 +48,31 @@ public class QueueArray {
         }
         return result;
     }
+
+    public boolean deleteByPhone(String phone) {
+        boolean deleted = false;
+        Reservation[] tempArray = new Reservation[maxSize];
+        int count = 0;
+
+        for (int i = 0; i < nItems; i++) {
+            Reservation res = queArray[(front + i) % maxSize];
+            if (!deleted && res.getPhone().equals(phone)) {
+                deleted = true;  // delete only first matching phone
+                continue;        // skip adding this reservation to tempArray
+            }
+            tempArray[count++] = res;
+        }
+
+
+        // Reset the queue with updated data
+        queArray = new Reservation[maxSize];
+        front = 0;
+        rear = -1;
+        nItems = 0;
+        for (int i = 0; i < count; i++) {
+            insert(tempArray[i]);
+        }
+
+        return deleted;
+    }
 }

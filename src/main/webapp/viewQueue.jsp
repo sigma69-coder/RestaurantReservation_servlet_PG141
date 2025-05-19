@@ -9,6 +9,16 @@
 <body>
 <div class="container02">
     <h2>Reservation Queue (Sorted by Time)</h2>
+
+    <%
+        String message = (String) request.getAttribute("message");
+        if (message != null) {
+    %>
+        <p style="color: green;"><%= message %></p>
+    <%
+        }
+    %>
+
     <table border="1">
         <tr>
             <th>Name</th>
